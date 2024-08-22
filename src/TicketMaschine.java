@@ -1,5 +1,7 @@
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Scanner;
+
 
 public class TicketMaschine {
     private int autoIncrementID= 1;
@@ -20,6 +22,8 @@ class Ticket {
     private LocalDateTime ausfahrtszeit;
     private Fahrzeug fahrzeug;
     private double preisProSekunde = 0.15;
+    private double preise = preisProSekunde * 3600;
+    private boolean bezahlt = false;
 
     public Ticket(int ticketNummer, Fahrzeug fahrzeug) {
         this.ticketNummer = ticketNummer;
@@ -36,7 +40,22 @@ class Ticket {
             return 0.0;
         }
         long dauerInSekunden= java.time.Duration.between(einfahrtszeit, ausfahrtszeit).toMinutes();
-        double stunden = dauerInSekunden * 3600.0;
-        return stunden;
+        double preise = dauerInSekunden * 3600.0;
+        return preise;
+    }
+
+    public void bezahlen() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Zahlen Sie bitte die Rechnung [ja]");
+
+        String bezahle = scanner.next();
+
+        switch (bezahle) {
+            case "ja":
+                System.out.println("Ihr Rechnung im Betrag von "+ preise + " wurde bezahlt.");
+            default:
+                System.out.println("Sie müssen die Rechnung zahlen!!!");
+        }
+        this.fahrzeug = null;
     }
 }

@@ -1,9 +1,11 @@
 import java.util.ArrayList;
 
 public class Parkhaus {
+
     private ArrayList<Stockwerk> stockwerke = new ArrayList<>(2);
     private Schranken eingangsschranke;
     private Schranken ausgangsschranke;
+    Parkplatz meinParkplatz= new Parkplatz();
 
     Parkplatz findeFreieParkplatz() {
         for (Stockwerk stockwerk: stockwerke) {
@@ -17,14 +19,13 @@ public class Parkhaus {
     }
 
     public void einfahren(Fahrzeug fahrzeug) {
-        Parkplatz freieParkplatz = new Parkplatz();
-        if (freieParkplatz == null) {
+        if (meinParkplatz == null) {
             System.out.println("Kein verfügbare Platz");
             return;
         }
 
         eingangsschranke.oeffnen();
-        freieParkplatz.belegen(fahrzeug);
+        meinParkplatz.belegen(fahrzeug);
         System.out.println("Ticket lösen .....");
         Ticket neuesTicket = new Ticket(1, fahrzeug);
         TicketMaschine ticketMaschine = new TicketMaschine();
@@ -32,7 +33,9 @@ public class Parkhaus {
         System.out.println("Fahrzeug " + fahrzeug.getFahrzeugID() + " fährt ein.");
         eingangsschranke.schliessen();
     }
+
     public double ausfahren(Ticket ticket) {
+        meinParkplatz.befreiePlatz();
         ausgangsschranke.oeffnen();
         System.out.println("Fahrzeug mit Ticket " + ticket.getTicketNummer() + " fährt aus.");
         ausgangsschranke.schliessen();
@@ -43,20 +46,11 @@ public class Parkhaus {
 class Stockwerk {
     private ArrayList<Parkplatz> parkplaetze = new ArrayList<>(5);
     private TicketMaschine ticketMaschine;
-
     public ArrayList<Parkplatz> getParkplaetze() {
         return parkplaetze;
     }
 }
 
-class Schranken {
-    public void oeffnen() {
-        System.out.println("Schranken offen");
-    }
-    public void schliessen() {
-        System.out.println("Schranken zu");
-    }
-}
 class Parkplatz {
     private boolean belegt;
     private Fahrzeug fahrzeug;
@@ -83,5 +77,18 @@ class Fahrzeug {
 
     public String getFahrzeugID() {
         return FahrzeugID;
+    }
+}
+
+class Schranken {
+    private boolean offen = false;
+
+    public void oeffnen() {
+        this.offen = true;
+        System.out.println("Schranken offen");
+    }
+    public void schliessen() {
+        this.offen = false;
+        System.out.println("Schranken zu");
     }
 }

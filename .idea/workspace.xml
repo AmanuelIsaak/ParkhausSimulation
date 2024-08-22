@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c7a5b3b-fb10-449d-ad53-e10f2e9c4aee" name="Changes" comment="">
+    <list default="true" id="7c7a5b3b-fb10-449d-ad53-e10f2e9c4aee" name="Changes" comment="Ich habe viele Error messages gelöst, aber es funktioniert trotzdem nicht.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Parkhaus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parkhaus.java" afterDir="false" />
@@ -58,6 +59,20 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.maddyhome.idea.vim.ui.VimEmulationConfigurable&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ParkhausSimulation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,21 +82,19 @@
       <option name="presentableId" value="Default" />
       <updated>1724320799244</updated>
     </task>
+    <task id="LOCAL-00001" summary="Ich habe viele Error messages gelöst, aber es funktioniert trotzdem nicht.">
+      <option name="closed" value="true" />
+      <created>1724343430203</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724343430203</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Parkhaus.java</url>
-          <line>46</line>
-          <properties class="Stockwerk" method="getParkplaetze">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ich habe viele Error messages gelöst, aber es funktioniert trotzdem nicht." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ich habe viele Error messages gelöst, aber es funktioniert trotzdem nicht." />
   </component>
 </project>
