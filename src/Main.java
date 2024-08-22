@@ -10,25 +10,34 @@ public class Main {
         while (true) {
             System.out.println("Willkommen zum Parkhaus!");
             System.out.println("1. Einfahren");
-            System.out.println("1. Parkieren");
-            System.out.println("2. Ausfahren");
-            System.out.println("3. Beenden");
+            System.out.println("2. Bezahlen");
+            System.out.println("3. Ausfahren");
+            System.out.println("4. Beenden");
 
-            int auswahl = scanner.nextInt();
+            String auswahl = scanner.next();
+            String stockWerk = scanner.next();
+            String zahlen = scanner.next();
 
             switch (auswahl) {
-                case 1:
-                    System.out.print("Bitte geben Sie Ihre Ticketnummer ein: ");
-                    meinParkhaus.einfahren(meinFahrzeug);
+                case "1":
+                    System.out.println("Willkommen!");
+                    System.out.println("Wollen Sie 1. Stock oder 2. Stock?");
+                    if (stockWerk == "1") {
+                        meinParkhaus.einfahren();
+                    } else if (stockWerk == "2") {
+                       meinParkhaus.einfahren();
+                    }
+                default:
+                    System.out.println("Ungültige Auswahl");
                     break;
-                case 2:
-                    System.out.println("");
-                case 3:
-                    System.out.print("Bitte geben Sie Ihre Ticketnummer ein: ");
+                case "2":
+                    System.out.println("Danke, dass Sie hier waren!");
+                    System.out.println("Der Endpreis ist" + ticketMaschine.erstelleTicket());
+                    System.out.println("Zahlen? (y/n)");
 
-                    break;
-                case 4:
-                    System.exit(0);
+                case "3":
+                    System.out.print("");
+
                     break;
             }
         }
