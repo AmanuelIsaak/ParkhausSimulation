@@ -1,0 +1,44 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"7c7a5b3b-fb10-449d-ad53-e10f2e9c4aee\" name=\"Changes\" comment=\"Habe versucht den Code einige Massen zu laufen zu bringen, das ging leider nicht.\">\n      <change afterPath=\"$PROJECT_DIR$/src/Fahrzeug.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Parkplatz.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Schranken.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Simulation.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Stockwerk.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/Ticket.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Main.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Parkhaus.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Parkhaus.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/TicketMaschine.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/TicketMaschine.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;amanafro&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;git@github.com:amanafro/ParkhausSimulation.git&quot;,\n    &quot;accountId&quot;: &quot;15207cae-7287-4bc4-81fc-f775628a0deb&quot;\n  }\n}</component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 1\n}</component>\n  <component name=\"ProjectId\" id=\"2l0dCGsHhbH0UxM6zWbcbVzURoU\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;Application.Main.executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;onboarding.tips.debug.path&quot;: &quot;/home/aman/personal/ParkhausSimulation/src/Main.java&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;com.maddyhome.idea.vim.ui.VimEmulationConfigurable&quot;\n  }\n}</component>\n  <component name=\"RunManager\">\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Main\" />\n      <module name=\"ParkhausSimulation\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Main\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"7c7a5b3b-fb10-449d-ad53-e10f2e9c4aee\" name=\"Changes\" comment=\"\" />\n      <created>1724320799244</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1724320799244</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Ich habe viele Error messages gelöst, aber es funktioniert trotzdem nicht.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1724343430203</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1724343430203</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Habe versucht den Code einige Massen zu laufen zu bringen, das ging leider nicht.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1724349505663</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1724349505663</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Ich habe viele Error messages gelöst, aber es funktioniert trotzdem nicht.\" />\n    <MESSAGE value=\"Habe versucht den Code einige Massen zu laufen zu bringen, das ging leider nicht.\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Habe versucht den Code einige Massen zu laufen zu bringen, das ging leider nicht.\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision c3972d7300d4ddff57cb5f4b2ecf1919e0b8581a)
++++ b/.idea/workspace.xml	(date 1724607526574)
+@@ -4,7 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="7c7a5b3b-fb10-449d-ad53-e10f2e9c4aee" name="Changes" comment="Habe versucht den Code einige Massen zu laufen zu bringen, das ging leider nicht.">
++    <list default="true" id="7c7a5b3b-fb10-449d-ad53-e10f2e9c4aee" name="Changes" comment="Vieles refaktoriesiert, aber trotzdem nicht ganz fertig">
+       <change afterPath="$PROJECT_DIR$/src/Fahrzeug.java" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/src/Parkplatz.java" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/src/Schranken.java" afterDir="false" />
+@@ -103,12 +103,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1724349505663</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Vieles refaktoriesiert, aber trotzdem nicht ganz fertig">
++      <option name="closed" value="true" />
++      <created>1724607526236</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1724607526236</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Ich habe viele Error messages gelöst, aber es funktioniert trotzdem nicht." />
+     <MESSAGE value="Habe versucht den Code einige Massen zu laufen zu bringen, das ging leider nicht." />
+-    <option name="LAST_COMMIT_MESSAGE" value="Habe versucht den Code einige Massen zu laufen zu bringen, das ging leider nicht." />
++    <MESSAGE value="Vieles refaktoriesiert, aber trotzdem nicht ganz fertig" />
++    <option name="LAST_COMMIT_MESSAGE" value="Vieles refaktoriesiert, aber trotzdem nicht ganz fertig" />
+   </component>
+ </project>
+\ No newline at end of file
