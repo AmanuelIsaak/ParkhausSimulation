@@ -15,20 +15,30 @@ public class Parkhaus {
     return null;
   }
 
+  EinfahrtSchranke einfahrtSchranke = new EinfahrtSchranke();
+  AusfahrtSchranke ausfahrtSchranke = new AusfahrtSchranke();
+
   public void einfahren(Fahrzeug fahrzeug) {
-    if (!findeFreieParkplatz().isBelegt()) {
-      System.out.println("Kein verfügbare Platz");
-      return;
+    einfahrtSchranke.oeffnen();
+    Parkplatz freierPlatz = findeFreieParkplatz();
+    if (freierPlatz != null) {
+      einfahrtSchranke.schliessen();
+      freierPlatz.belegen(fahrzeug);
+    } else {
+      System.out.println("Kein verfügbarer Platz");
     }
   }
 
   public double ausfahren(Ticket ticket) {
-    return ticket.berechnePreis();
+    ausfahrtSchranke.oeffnen();
+    return ticket.preisBerechner();
   }
 }
 
-interface Steuerung {
-  public void parkieren();
-  public void ausfahren();
-  public void ticketBezahlen();
+class Stockwerk {
+  private ArrayList<Parkplatz> parkplaetze = new ArrayList<>(5);
+  private TicketMaschine ticketMaschine;
+  public ArrayList<Parkplatz> getParkplaetze() {
+    return parkplaetze;
+  }
 }
