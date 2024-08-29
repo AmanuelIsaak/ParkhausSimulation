@@ -13,10 +13,10 @@ public class Simulation {
 
     int auswahl;
 
+    System.out.println("Willkommen zu unsere Parkhaus! Suchen Sie sich einen Parkplatz");
     do {
-      System.out.println("Willkommen zu unsere Parkhaus! Suchen Sie sich einen Parkplatz");
       System.out.println("1. Ticket lösen und parkieren");
-      System.out.println("2. Ausfahren und an die bezahlen");
+      System.out.println("2. Ausfahren und an die Kasse");
       System.out.println("3. Bezahlen und Parkhaus verlassen");
       System.out.println("4. Beenden");
       auswahl = scanner.nextInt();
@@ -30,10 +30,10 @@ public class Simulation {
           meinParkhaus.einfahren(meinFahrzeug);
           System.out.println("Parkiert");
           break;
-        case 2:
+        case 3:
           meinParkhaus.ausfahren(meinTicket);
           break;
-        case 3:
+        case 2:
           System.out.println("Ticket abgeben... ");
           ticketMaschine.findeTicket(ticketNummer);
           System.out.println("Transaktion....");
