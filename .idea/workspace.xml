@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c7a5b3b-fb10-449d-ad53-e10f2e9c4aee" name="Changes" comment="Vieles refaktoriesiert, aber trotzdem nicht ganz fertig">
-      <change afterPath="$PROJECT_DIR$/src/AusfahrtSchranke.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EinfahrtSchranke.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TicketTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParkhausSimulation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ParkhausSimulation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fahrzeug.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Parkhaus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parkhaus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parkplatz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parkplatz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Schranken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Schranken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Simulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stockwerk.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TicketMaschine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TicketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/TicketTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +56,7 @@
     "Application.Simulation.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.TicketTest.executor": "Run",
+    "JUnit.TicketTest.testPreisBerechnung.executor": "Debug",
     "JUnit.TicketTest.testTicketMaschine.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -75,7 +68,7 @@
     "settings.editor.selected.configurable": "com.maddyhome.idea.vim.ui.VimEmulationConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TicketTest.testTicketMaschine">
+  <component name="RunManager" selected="JUnit.TicketTest.testPreisBerechnung">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ParkhausSimulation" />
@@ -92,17 +85,27 @@
     </configuration>
     <configuration name="TicketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ParkhausSimulation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TicketTest" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TicketTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketTest.testPreisBerechnung" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ParkhausSimulation" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TicketTest" />
+      <option name="METHOD_NAME" value="testPreisBerechnung" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="TicketTest.testTicketMaschine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ParkhausSimulation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TicketTest" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TicketTest" />
       <option name="METHOD_NAME" value="testTicketMaschine" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -111,10 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TicketTest.testPreisBerechnung" />
         <item itemvalue="JUnit.TicketTest.testTicketMaschine" />
+        <item itemvalue="Application.Simulation" />
         <item itemvalue="JUnit.TicketTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Simulation" />
       </list>
     </recent_temporary>
   </component>

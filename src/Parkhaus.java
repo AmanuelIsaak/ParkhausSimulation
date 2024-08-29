@@ -1,7 +1,14 @@
 import java.util.ArrayList;
 
 public class Parkhaus {
-  private ArrayList<Stockwerk> stockwerke = new ArrayList<>(2);
+  private ArrayList<Stockwerk> stockwerke = new ArrayList<>();
+
+  public Parkhaus() {
+    int anzahlStockwerke = 2;
+    for (int i = 0; i < anzahlStockwerke; i++) {
+      stockwerke.add(new Stockwerk());
+    }
+  }
 
 
   Parkplatz findeFreieParkplatz() {
@@ -22,8 +29,8 @@ public class Parkhaus {
     einfahrtSchranke.oeffnen();
     Parkplatz freierPlatz = findeFreieParkplatz();
     if (freierPlatz != null) {
-      einfahrtSchranke.schliessen();
       freierPlatz.belegen(fahrzeug);
+      einfahrtSchranke.schliessen();
     } else {
       System.out.println("Kein verfügbarer Platz");
     }
@@ -36,7 +43,15 @@ public class Parkhaus {
 }
 
 class Stockwerk {
-  private ArrayList<Parkplatz> parkplaetze = new ArrayList<>(5);
+  private ArrayList<Parkplatz> parkplaetze = new ArrayList<>();
+
+  public Stockwerk() {
+    int anzahlParkplätze = 5;
+    for (int i = 0; i < anzahlParkplätze; i++) {
+      parkplaetze.add(new Parkplatz());
+    }
+  }
+
   private TicketMaschine ticketMaschine;
   public ArrayList<Parkplatz> getParkplaetze() {
     return parkplaetze;

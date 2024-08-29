@@ -16,14 +16,9 @@ public class Ticket {
     }
 
     public double preisBerechner() {
-        if (ausfahrt == null) {
-            throw new IllegalStateException("Parkvorgang noch nicht beendet");
-        }
+        ausfahrt = LocalDateTime.now();
         Duration dauer = Duration.between(einfahrt, ausfahrt);
         double stunden = dauer.toHoursPart();
-        if (stunden <= 0) {
-            throw new IllegalArgumentException("Dauer muss positiv sein");
-        }
         return stunden * PREIS_PRO_STUNDE;
     }
 

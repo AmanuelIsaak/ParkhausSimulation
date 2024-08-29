@@ -29,18 +29,22 @@ public class Simulation {
           System.out.println("Gefunden");
           meinParkhaus.einfahren(meinFahrzeug);
           System.out.println("Parkiert");
+          break;
         case 2:
           meinParkhaus.ausfahren(meinTicket);
+          break;
         case 3:
           System.out.println("Ticket abgeben... ");
           ticketMaschine.findeTicket(ticketNummer);
           System.out.println("Transaktion....");
           ticketMaschine.bezahlTicket(ticketNummer);
           meinTicket.beendeParkvorgang();
+          break;
         case 4:
           return;
         default:
           System.out.println("ungültige Auswahl");
+          break;
       }
     } while (auswahl != 3);
   }
