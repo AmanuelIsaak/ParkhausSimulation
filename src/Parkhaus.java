@@ -1,15 +1,17 @@
 import java.util.ArrayList;
 
 public class Parkhaus {
-  private ArrayList<Stockwerk> stockwerke = new ArrayList<>();
+  ArrayList<Stockwerk> stockwerke = new ArrayList<>();
+  EinfahrtSchranke einfahrtSchranke = new EinfahrtSchranke();
+  AusfahrtSchranke ausfahrtSchranke = new AusfahrtSchranke();
 
+  // hier wird instanziert, dass es 2 Stockwerke gibt
   public Parkhaus() {
     int anzahlStockwerke = 2;
     for (int i = 0; i < anzahlStockwerke; i++) {
       stockwerke.add(new Stockwerk());
     }
   }
-
 
   Parkplatz findeFreieParkplatz() {
     for (Stockwerk stockwerk: stockwerke) {
@@ -21,9 +23,6 @@ public class Parkhaus {
     }
     return null;
   }
-
-  EinfahrtSchranke einfahrtSchranke = new EinfahrtSchranke();
-  AusfahrtSchranke ausfahrtSchranke = new AusfahrtSchranke();
 
   public void einfahren(Fahrzeug fahrzeug) {
     einfahrtSchranke.oeffnen();
@@ -52,8 +51,8 @@ class Stockwerk {
     }
   }
 
-  private TicketMaschine ticketMaschine;
   public ArrayList<Parkplatz> getParkplaetze() {
     return parkplaetze;
   }
+
 }

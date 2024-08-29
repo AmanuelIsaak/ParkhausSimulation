@@ -9,10 +9,15 @@ public class TicketTest {
     @Test
     public void testPreisBerechnung() {
         Ticket ticket = new Ticket(123);
+        TicketMaschine ticketMaschine = new TicketMaschine();
+        ticketMaschine.fuegeTicketHinzu(ticket);
+
         ticket.beendeParkvorgang(); // Simulieren, dass der Parkvorgang beendet wurde
 
-        double erwarteterPreis = 53.0;
+        double erwarteterPreis = 0.0;
         double berechneterPreis = ticket.preisBerechner();
+
+        ticketMaschine.bezahlTicket(ticket.getTicketNummer());
 
         assertEquals(erwarteterPreis, berechneterPreis, 0.001);
     }

@@ -8,7 +8,7 @@ public class Ticket {
     private final int ticketNummer;
     private final LocalDateTime einfahrt;
     private LocalDateTime ausfahrt;
-    private static final double PREIS_PRO_SEKONDEN = .05;
+    private static final double PREIS_PRO_MINUTE= .005;
 
     public Ticket(int ticketNummer) {
         this.ticketNummer = ticketNummer;
@@ -18,10 +18,11 @@ public class Ticket {
     public double preisBerechner() {
         ausfahrt = LocalDateTime.now();
         Duration dauer = Duration.between(einfahrt, ausfahrt);
-        double stunden = dauer.toSeconds();
+        double stunden = dauer.toSeconds() * 60; // von Sekunden zu Studen mit mal 3600 kovertiert
         System.out.println(stunden);
-        return stunden * PREIS_PRO_SEKONDEN * 3600;
+        return stunden * PREIS_PRO_MINUTE;
     }
+
 
     public int getTicketNummer() {
         return ticketNummer;
@@ -49,7 +50,7 @@ class TicketMaschine{
     public void bezahlTicket(int ticketNummer) {
         Ticket ticket = findeTicket(ticketNummer);
         if (ticket != null) {
-            tickets.remove(ticket);
+            tickets.remove(ticket); // wenn es bezahlt wird, wird das Ticket von der "List<Ticket>" entfernt
             System.out.println("Ticket " + ticketNummer + " bezahlt. Kosten: CHF " + ticket.preisBerechner());
         } else {
             System.out.println("Ticket nicht gefunden.");

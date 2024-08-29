@@ -6,7 +6,5 @@ public class AusfahrtSchranke implements Schranken {
   }
 
   @Override
-  public void schliessen() {
-    return;
-  }
+  public void schliessen() {}
 }
