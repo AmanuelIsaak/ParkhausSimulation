@@ -35,3 +35,5 @@ public class TicketTest {
         assertNull(ticketMaschine.findeTicket(ticket.getTicketNummer()));
     }
 }
+
+// Code geschrieben von Amanuel Isaak am 23.08.2024

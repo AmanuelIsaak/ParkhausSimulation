@@ -13,14 +13,14 @@ public class ParkplatzTest {
 
         parkhaus.einfahren(fahrzeug);
 
-        assertTrue(parkhaus.stockwerke.get(0).getParkplaetze().get(0).isBelegt());
+        assertTrue(parkhaus.stockwerke.getFirst().getParkplaetze().getFirst().isBelegt());
     }
 
     @Test
     public void findeFreieParkplatz_findetFreienPlatz() {
         Parkhaus parkhaus = new Parkhaus();
         // Setze einen Parkplatz als belegt
-        parkhaus.stockwerke.get(0).getParkplaetze().get(0).belegen(new Fahrzeug("456"));
+        parkhaus.stockwerke.getFirst().getParkplaetze().getFirst().belegen(new Fahrzeug("456"));
 
         Parkplatz freierPlatz = parkhaus.findeFreieParkplatz();
 
@@ -30,4 +30,5 @@ public class ParkplatzTest {
     }
 }
 
+// Code geschrieben von Amanuel Isaak am 23.08.2024
 

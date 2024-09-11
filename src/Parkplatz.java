@@ -11,11 +11,6 @@ public class Parkplatz {
         this.fahrzeug = fahrzeug;
     }
 
-    public void befreiePlatz() {
-        this.status = Status.FREI;
-        this.fahrzeug = null;
-    }
-
     public boolean isBelegt() {
         return status == Status.BELEGT;
     }
@@ -30,3 +25,5 @@ class Fahrzeug {
         return nummerSchild;
     }
 }
+
+// Code geschrieben von Amanuel Isaak am 23.08.2024

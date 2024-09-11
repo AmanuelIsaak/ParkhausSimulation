@@ -35,14 +35,13 @@ public class Parkhaus {
     }
   }
 
-  public double ausfahren(Ticket ticket) {
+  public void ausfahren(Ticket ticket) {
     ausfahrtSchranke.oeffnen();
-    return ticket.preisBerechner();
   }
 }
 
 class Stockwerk {
-  private ArrayList<Parkplatz> parkplaetze = new ArrayList<>();
+  private final ArrayList<Parkplatz> parkplaetze = new ArrayList<>();
 
   public Stockwerk() {
     int anzahlParkplätze = 5;
@@ -54,5 +53,6 @@ class Stockwerk {
   public ArrayList<Parkplatz> getParkplaetze() {
     return parkplaetze;
   }
-
 }
+
+// Code geschrieben von Amanuel Isaak am 23.08.2024
