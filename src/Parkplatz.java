@@ -1,4 +1,7 @@
+import java.util.Optional;
+
 public class Parkplatz {
+
     private enum Status { FREI, BELEGT }
     private Status status = Status.FREI;
     private Fahrzeug fahrzeug;
